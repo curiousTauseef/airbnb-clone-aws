@@ -16,6 +16,7 @@ django-dotenv = "*"
 requests = "*"
 django-storages = "*"
 sentry-sdk = "==0.13.5"
+pipenv-to-requirements = "*"
 
 [requires]
 python_version = "3.7"

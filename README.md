@@ -45,3 +45,11 @@ $ npm run css
 ```bash
 $ pipenv install awsebcli --dev
 ```
+
+### pipenv-to-requirements
+
+```bash
+$ pipenv install pipenv-to-requirements
+$ pipenv_to_requirements -f
+
+```
