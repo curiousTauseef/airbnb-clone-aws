@@ -43,13 +43,28 @@ $ npm run css
 ### AWS Elastic Beanstalk
 
 ```bash
-$ pipenv install awsebcli --dev
+
+$ pip3 install awsebcli
 ```
 
-### pipenv-to-requirements
+### Pipenv-to-requirements
 
 ```bash
 $ pipenv install pipenv-to-requirements
 $ pipenv_to_requirements -f
 
+```
+
+### Sentry-sdk
+
+```bash
+
+$ pipenv install sentry-sdk==0.13.5
+```
+
+### Sentry-sdk
+
+```bash
+
+$ pipenv install django-storages
 ```
