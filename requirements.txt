@@ -34,3 +34,4 @@ urllib3==1.25.7
 virtualenv-clone==0.5.3
 psycopg2==2.8.4
 virtualenv==16.7.9
+sentry-sdk==0.13.5
