@@ -62,7 +62,7 @@ $ pipenv_to_requirements -f
 $ pipenv install sentry-sdk==0.13.5
 ```
 
-### Sentry-sdk
+### Django Storages
 
 ```bash
 
