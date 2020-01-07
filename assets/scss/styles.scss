@@ -90,6 +90,13 @@ form {
   }
 }
 
+.grid-child{
+  transition: transform 0.5s ease-in-out;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
 .border-section {
   @apply border-b border-gray-400 pb-8 mt-8;
 }
