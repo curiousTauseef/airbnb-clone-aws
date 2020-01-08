@@ -215,7 +215,7 @@ class DeleteRoomView(user_mixins.LoggedInOnlyView, DetailView):
 def delete_room(request, room_pk):
     if request.method == "POST":
         user = request.user
-        room_code = request.POST.get("room_name")
+        room_code= request.POST.get("room_name")
         try:
             room = models.Room.objects.get(pk=room_pk)
             if room.host.pk != user.pk:
