@@ -7,15 +7,13 @@
 
 {% block content %}
 
-    <div class="-mt-5 container max-w-full h-75vh mb-20 flex ">
+    <div class="-mt-5 container max-w-full h-75vh flex mb-20">
         <div class="h-full w-1/2 overflow-hidden">
             <div class="h-full w-full bg-cover bg-center grid-child" style="background-image: url({{room.first_photo}})"></div>
         </div>
         <div class="h-full w-1/2 flex flex-wrap">
             {% for photo in room.get_next_four_photos %}
-                <div class="overflow-hidden w-1/2 h-auto border-gray-600 border">
-                    <div style="background-image: url({{photo.file.url}});" class="bg-cover w-full h-full bg-center grid-child"></div>
-                </div>
+                <div style="background-image:url({{photo.file.url}})" class="w-1/2 h-auto bg-cover bg-center border-gray-700 border grid-child"></div>
             {% endfor %}
         </div>
     </div>
