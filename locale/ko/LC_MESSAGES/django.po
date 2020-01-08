@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-09 02:00+0900\n"
+"POT-Creation-Date: 2020-01-09 02:46+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,7 +40,7 @@ msgstr "호스팅 시작"
 
 #: templates/partials/nav.html:14
 msgid "Create Room"
-msgstr "방 생성"
+msgstr "숙소 생성"
 
 #: templates/partials/nav.html:16
 msgid "See Reservation"
@@ -72,7 +72,7 @@ msgstr "나의 예약"
 
 #: templates/reservations/see_reservations.html:8
 msgid "Your Room's Status"
-msgstr "숙소 상태"
+msgstr "숙소 호스팅"
 
 #: templates/reservations/see_reservations.html:17
 msgid "You have no reservations."
@@ -91,8 +91,8 @@ msgid "Save to Favourites"
 msgstr "관심 목록으로 추가"
 
 #: templates/rooms/room_list.html:13
-msgid ", Welcome!"
-msgstr "님, 환영합니다!"
+msgid ", Travel hard."
+msgstr "님, 무엇을 찾고 계신가요?"
 
 #: templates/rooms/room_list.html:32
 #, python-format
@@ -138,6 +138,9 @@ msgstr "언어"
 #: users/models.py:85
 msgid "Verify Airbnb Account"
 msgstr "에어비앤비 계정 인증"
+
+#~ msgid ", Welcome!"
+#~ msgstr "님, 무엇을 찾고 계신가요?"
 
 #~ msgid "{{user.first_name}}, Welcome!"
 #~ msgstr "{{user.first_name}}님, 환영합니다!"
