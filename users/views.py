@@ -219,6 +219,7 @@ class UpdateProfileView(mixins.LoggedInOnlyView, SuccessMessageMixin, UpdateView
     fields = (
         "first_name",
         "last_name",
+        "email",
         "gender",
         "bio",
         "birthdate",
@@ -234,6 +235,7 @@ class UpdateProfileView(mixins.LoggedInOnlyView, SuccessMessageMixin, UpdateView
         form = super().get_form(form_class=form_class)
         form.fields["first_name"].widget.attrs = {"placeholder": "First name"}
         form.fields["last_name"].widget.attrs = {"placeholder": "Last name"}
+        form.fields["email"].widget.attrs = {"placeholder": "email"}
         form.fields["bio"].widget.attrs = {"placeholder": "Bio"}
         form.fields["birthdate"].widget.attrs = {"placeholder": "Birthdate"}
         form.fields["first_name"].widget.attrs = {"placeholder": "First name"}
