@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-09 01:50+0900\n"
+"POT-Creation-Date: 2020-01-09 02:00+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -91,8 +91,8 @@ msgid "Save to Favourites"
 msgstr "관심 목록으로 추가"
 
 #: templates/rooms/room_list.html:13
-msgid "{{user.first_name}}, Welcome!"
-msgstr "{{user.first_name}}님, 환영합니다!"
+msgid ", Welcome!"
+msgstr "님, 환영합니다!"
 
 #: templates/rooms/room_list.html:32
 #, python-format
@@ -138,6 +138,9 @@ msgstr "언어"
 #: users/models.py:85
 msgid "Verify Airbnb Account"
 msgstr "에어비앤비 계정 인증"
+
+#~ msgid "{{user.first_name}}, Welcome!"
+#~ msgstr "{{user.first_name}}님, 환영합니다!"
 
 #~ msgid "birthdate"
 #~ msgstr "생일"
