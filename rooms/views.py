@@ -204,3 +204,30 @@ class CreateRoomView(user_mixins.LoggedInOnlyView, FormView):
         form.save_m2m()
         messages.success(self.request, "Room Uploaded")
         return redirect(reverse("rooms:detail", kwargs={"pk": room.pk}))
+
+class DeleteRoomView(user_mixins.LoggedInOnlyView, DetailView):
+
+    model = models.Room
+    template_name = "rooms/room_delete.html"
+
+
+@login_required
+def delete_room(request, room_pk):
+    if request.method == "POST":
+        user = request.user
+        room_code= request.POST.get("room_name")
+        try:
+            room = models.Room.objects.get(pk=room_pk)
+            if room.host.pk != user.pk:
+                messages.error(request, "Can't delete that room")
+            else:
+                if room_code == room.name:
+                    models.Room.objects.filter(pk=room_pk).delete()
+                    messages.success(request, "Room Deleted")
+                    return redirect(reverse("core:home"))
+                else:
+                    messages.error(request, "Room name is incorrect")
+                    return redirect(reverse("rooms:delete", kwargs={"pk": room_pk}))
+        except models.Room.DoesNotExist:
+            return redirect(reverse("core:home"))
+
