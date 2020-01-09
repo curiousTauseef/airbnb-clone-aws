@@ -66,7 +66,7 @@ class CreateRoomForm(forms.ModelForm):
 
         widgets = {
             'check_in': forms.TextInput(attrs={'placeholder': '01:23:45'}),
-            'check_out': forms.Textarea(
+            'check_out': forms.TextInput(
                 attrs={'placeholder': '01:23:45'}),
         }
 
