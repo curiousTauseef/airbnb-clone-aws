@@ -29,7 +29,7 @@ SECRET_KEY = os.environ.get("DJANGO_SECRET", "GjV$9ahudD@e")
 
 DEBUG = bool(os.environ.get("DEBUG"))
 
-ALLOWED_HOSTS = [".elasticbeanstalk.com"]
+ALLOWED_HOSTS = [".elasticbeanstalk.com", "localhost", "13.209.59.153"]
 
 
 # Application definition
@@ -137,7 +137,7 @@ USE_I18N = True
 
 USE_L10N = True
 
-USE_TZ = True
+USE_TZ = False
 
 
 # Static files (CSS, JavaScript, Images)

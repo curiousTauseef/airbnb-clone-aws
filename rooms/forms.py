@@ -64,6 +64,12 @@ class CreateRoomForm(forms.ModelForm):
             "house_rules",
         )
 
+        widgets = {
+            'check_in': forms.TextInput(attrs={'placeholder': '01:23:45'}),
+            'check_out': forms.Textarea(
+                attrs={'placeholder': '01:23:45'}),
+        }
+
     def save(self, *args, **kwargs):
         room = super().save(commit=False)
         return room
